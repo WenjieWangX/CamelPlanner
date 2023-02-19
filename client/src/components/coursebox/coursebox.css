@@ -1,0 +1,82 @@
+.coursebox {
+  align-items: center;
+  background-color: white;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  padding: 0 0 0 15px;
+  cursor: pointer;
+  position: relative;
+  top: 0;
+  width: 100%;
+  margin-bottom: 5px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 1px 2px 0px;
+}
+
+.coursebox__course-name {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.coursebox__longest-rectangle {
+  font-size: 15px;
+  margin: 0 10px 0 0;
+  min-width: 0;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.coursebox__status {
+  background-color: transparent;
+  border: 1px solid rgba(103, 114, 229, 3);
+  box-shadow: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin: 0 10px 0 0;
+}
+
+.coursebox__grid {
+  display: grid;
+}
+
+.coursebox__grid
+.selected {
+  border: 2px solid #0e2e5c;
+  color: #0e2e5c
+}
+
+.coursebox__button-selector {
+  border: 1px solid #dddde0;
+  background-color: #fff;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 0 8px 16px 0;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+
+.coursebox__button-selector
+.coursebox__button-selector-text {
+  padding: 11px 14px;
+}
+
+.coursebox__button-selector
+.selected
+.coursebox__button-selector-text {
+  padding: 10px 13px;
+}
+
+.coursebox__button-selector
+.coursebox__button-selector-text:focus {
+  outline: none;
+}

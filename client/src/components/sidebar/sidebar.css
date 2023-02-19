@@ -1,0 +1,134 @@
+/* * {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background: #e5e5e5;
+}
+
+.wrapper .sidebar {
+  background: #0e2e5c;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  padding: 20px 0;
+  transition: all 0.5s ease;
+}
+
+.wrapper .sidebar .profile {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.wrapper .sidebar .profile h3 {
+  color: #ffffff;
+  margin: 10px 0 5px;
+}
+
+.wrapper .sidebar ul li a {
+  display: block;
+  padding: 13px 30px;
+  color: rgb(241, 237, 237);
+  font-size: 16px;
+  position: relative;
+}
+
+.wrapper .sidebar ul li a .icon {
+  color: #dee4ec;
+  width: 30px;
+  display: inline-block;
+}
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active {
+  color: #0c7db1;
+  text-decoration: none;
+  background: white;
+  border-left: 20px solid #0e2e5c;
+} */
+
+/* ------------second version------------------ */
+
+/* .sidebar {
+  flex: 1;
+  height: calc(100vh - 70px);
+  background-color: #0e2e5c;
+  position: sticky;
+  top: 70px;
+}
+
+.sidebar__wrapper {
+  background: #0e2e5c;
+  position: fixed;
+  height: 100%;
+  transition: all 0.5s ease;
+}
+
+.sidebar .sidebar__wrapper {
+  background: #0e2e5c;
+  position: fixed;
+  height: 100%;
+  transition: all 0.5s ease;
+}
+
+.sidebar .sidebar__wrapper ul li a {
+  display: block;
+  padding: 13px 30px;
+  color: rgb(241, 237, 237);
+  font-size: 16px;
+  position: relative;
+}
+
+.sidebar .sidebar__wrapper ul li a:hover,
+.sidebar .sidebar__wrapper ul li a.active {
+  color: #0c7db1;
+  text-decoration: none;
+  background: white;
+}
+
+.sidebar__list {
+  list-style: none;
+} */
+
+.sidebar {
+  flex: 1;
+  height: calc(100vh - 70px);
+  background-color: #0e2e5c;
+  position: sticky;
+  top: 70px;
+}
+
+.sidebar__wrapper {
+  transition: all 0.5s ease;
+}
+
+.sidebar .sidebar__wrapper ul li a {
+  display: block;
+  padding: 13px 30px;
+  color: rgb(241, 237, 237);
+  font-size: 16px;
+}
+
+.sidebar__list {
+  list-style: none;
+  padding-left: 20px;
+  margin-top: 50%;
+}
+
+.sidebar__list-item {
+  padding-bottom: 20px;
+}
+
+.sidebar .sidebar__wrapper ul li a:hover,
+.sidebar .sidebar__wrapper ul li a.active {
+  color: #0c7db1;
+  text-decoration: none;
+  background-color: #e5e5e5;
+}

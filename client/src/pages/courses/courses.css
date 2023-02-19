@@ -1,0 +1,60 @@
+.courses {
+  flex: 6;
+  padding: 2rem;
+  line-height: 1.5;
+}
+
+.courses-grid {
+  display: grid;
+  gap: 1.5rem;
+  padding-block: 2rem;
+  width: min(95%, 70rem);
+  margin-inline: auto;
+}
+
+.courses__card {
+  border-radius: 10px;
+  background: rgb(247, 249, 252);
+}
+
+.courses__major-title {
+  font-weight: normal;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+
+.courses--content {
+  height: 100vh;
+  overflow: auto;
+}
+
+.courses--content::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* =================== Table Grid ================ */
+
+.courses--table {
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  grid-template-rows: 1fr 100%;
+  column-gap: 1em;
+}
+
+.courses--line {
+  border-bottom: 1px solid #cbcbcb;
+  transform: translateY(-50%);
+  grid-column: 2 / 7;
+}
+
+.courses__major-title {
+  display: block;
+  padding: 10px 5px 5px;
+  position: sticky;
+  top: 0;
+  text-align: center;
+  font-size: 1rem;
+}

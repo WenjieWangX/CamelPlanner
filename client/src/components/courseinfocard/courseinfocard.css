@@ -1,0 +1,30 @@
+.coursecard {
+  border-radius: 10px;
+  background-color: #ffffff;
+  background: white;
+  padding: 0.5em 1em;
+  margin-bottom: 1em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  text-align: center;
+  user-select: none;
+  position: relative;
+}
+
+.coursecard
+.coursecard__container {
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.color-icon-green {
+  color:rgb(107, 226, 107);
+  align-items: right;
+}
+
+.on-calendar {
+  pointer-events: none;
+  opacity: 0.5;
+}

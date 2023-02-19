@@ -1,0 +1,218 @@
+.modalBackground {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(200, 200, 200);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+}
+
+.modalContainer {
+  width: 75%;
+  height: 500px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  margin-top: 3rem;
+}
+
+.modalContainer .modal__title-welcomepage {
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+  animation: moveInBottom 1s ease-out;
+}
+
+.modalContainer .modal__title-majorpage {
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+  margin: 0 10px 0 10px;
+  display: flex;
+  border-bottom: 1px solid grey;
+  text-align: center;
+  animation: moveInBottom 1s ease-out;
+}
+
+.modalContainer .modal__button-container {
+  margin-top: 10px;
+  padding-top: 10px;
+  overflow: auto;
+}
+
+.modalContainer .modal__button-container .modal__button-selector {
+  border: 1px solid #dddde0;
+  background-color: #fff;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 0 8px 16px 0;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+.modalContainer 
+.modal__button-container 
+.button-animation:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.modalContainer 
+.modal__button-container 
+.button-animation:active {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.modalContainer 
+.modal__button-container 
+.modal__button-selector 
+.modal__button-selector-text {
+  padding: 11px 14px;
+}
+
+.modalContainer 
+.modal__button-container 
+.selected
+.modal__button-selector-text {
+  padding: 10px 13px;
+}
+
+.modalContainer 
+.modal__button-container 
+.modal__button-selector 
+.modal__button-selector-text:focus {
+  outline: none;
+}
+
+.modalContainer
+.modal__button-container
+.selected {
+  border: 2px solid #0e2e5c;
+  color: #0e2e5c
+}
+
+
+.modalContainer .footer {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  position: relative;
+  margin-top: 10px;
+  flex: 10%;
+}
+
+.modalContainer
+.footer
+.modal__pagination-button {
+  position: absolute;
+  cursor: pointer;
+  width: 140px;
+  height: 45px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #dddde0;
+  outline: none;
+}
+
+.modalContainer
+.footer
+.modal__pagination-button[disabled] {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.modalContainer
+.footer
+.modal__pagination-button
+.modal__pagination-button-text {
+  padding: 11px 14px;
+  text-align: center;
+}
+
+.modalContainer
+.footer
+.pagination-right {
+  bottom: 0;
+  right: 0;
+}
+
+.modalContainer
+.footer
+.pagination-left {
+  bottom: 0;
+  left: 0;
+}
+
+.modalContainer
+.footer
+.box-shadow-left {
+  box-shadow: -3px 5px 0px 1px rgb(118, 117, 117);
+}
+
+.modalContainer
+.footer
+.box-shadow-right {
+  box-shadow: 3px 5px 0px 1px rgb(118, 117, 117);
+}
+
+.modal__pagination ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.modal__pagination div{
+  display: inline-block;
+  padding: 10px 18px;
+  color: #222;
+}
+
+.dot div{
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 100%;
+  padding: 0;
+  margin: auto 5px;
+  text-align: center;
+  position: relative;
+  background-color: rgba(198, 182, 182, 0.4)
+}
+
+.dot .is-active{
+  background-color: #363836;
+}
+
+.full-width {
+  width: 100%;
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
